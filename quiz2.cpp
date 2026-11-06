@@ -8,7 +8,7 @@ int countZero(int arr[], int size);
 int sumPositive(int arr[], int size);
 int sumNegative(int arr[], int size);
 double calculateAverage(int arr[], int size);
-void displayResults(int posCount, int negCount, int zeroCount, int posSum, int negSum, double avg);
+void display(int posCount, int negCount, int zeroCount, int posSum, int negSum, double avg);
 
 int main() {
     const int SIZE = 5;
@@ -29,7 +29,7 @@ for (int i = 0;i < 5;i++)
     double avg = calculateAverage(numbers, SIZE);
 
    
-    displayResults(posCount, negCount, zeroCount, posSum, negSum, avg);
+    display(posCount, negCount, zeroCount, posSum, negSum, avg);
 
     return 0;
 }
@@ -110,10 +110,7 @@ double calculateAverage(int arr[], int size) {
 }
 
 
-void displayResults(int posCount, int negCount, int zeroCount, int posSum, int negSum, double avg) {
-    cout << "\n==============================\n";
-    cout << "       RESULTS SUMMARY        \n";
-    cout << "==============================\n";
+void display(int posCount, int negCount, int zeroCount, int posSum, int negSum, double avg) {
     cout << "Positive numbers count : " << posCount << endl;
     cout << "Negative numbers count : " << negCount << endl;
     cout << "Zero values count      : " << zeroCount << endl;
