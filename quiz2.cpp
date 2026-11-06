@@ -117,5 +117,4 @@ void display(int posCount, int negCount, int zeroCount, int posSum, int negSum, 
     cout << "Sum of positives       : " << posSum << endl;
     cout << "Sum of negatives       : " << negSum << endl;
     cout << "Average of all numbers : " << avg << endl;
-    cout << "==============================\n";
 }
